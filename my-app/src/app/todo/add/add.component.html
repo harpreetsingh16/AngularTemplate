@@ -1,0 +1,31 @@
+<div *ngIf="service.add" >
+  <h1> Add Todo</h1>
+  <label for="title">Title: </label>
+  <br>
+  <input type="text" name="title" id="title" [(ngModel)]="model.title">
+  <br>
+  <label for="content">Content: </label>
+  <br>
+  <input type="text" name="content" id="content" [(ngModel)]="model.content">
+  <br>
+  <br>
+  <button  (click)="addtodo()" >Add</button>
+</div>
+
+<div *ngIf="!service.add">
+  <p>{{service.data.title}}</p>
+  <p>{{service.data.content}}</p>
+  <h1> Edit Todo</h1>
+  <label for="title">Title: </label>
+  <br>
+  <input type="text" name="title" id="title" value="" [(ngModel)]="service.data.title">
+  <br>
+  <label for="content">Content: </label>
+  <br>
+  <input type="text" name="content" id="content" value="" [(ngModel)]="service.data.content">
+  <br>
+  <br>
+  <button (click)="edit()">Edit</button>
+</div>
+
+

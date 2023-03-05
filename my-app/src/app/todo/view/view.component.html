@@ -1,0 +1,9 @@
+<ul *ngIf="service.showi">
+  <li *ngFor="let item of service.todo let index = index;">{{item.title}}  {{item.content}}
+     <br>
+     <br> <button (click)="delete(index)">Delete</button>
+     <button (click)="edit(index)">Edit</button>
+  </li>
+
+</ul>
+

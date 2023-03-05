@@ -1,0 +1,13 @@
+<app-header></app-header>
+<main>
+  <aside>
+    <app-sidebar></app-sidebar>
+  </aside>
+  <app-main *ngIf="link?.home" ></app-main>
+  <app-about *ngIf="link?.about"></app-about>
+  <app-services *ngIf="link?.service"></app-services>
+  <app-resume *ngIf="link?.resume"></app-resume>
+  <app-testimonal *ngIf="link?.review"></app-testimonal>
+  <app-contact *ngIf="link?.contact"></app-contact>
+  <app-footer></app-footer>
+  </main>

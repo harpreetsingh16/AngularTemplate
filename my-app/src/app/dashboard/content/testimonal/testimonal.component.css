@@ -1,0 +1,40 @@
+.testimonal{
+  height:90vh;
+}
+.testimonal .col-6{
+  padding:48px;
+}
+.test{
+  border:2px solid var(--color1);
+}
+
+/* img */
+.col-6 .client-image{
+  float:left;
+  border-radius: 50%;
+
+}
+.col-6 .client{
+  float:left;
+  margin:0 16px;
+  font-size:calc(16px + var(--font));
+}
+.col-6 .client-name{
+  color:var(--color6);
+}
+.col-6 .client-para1{
+  color:var(--color7);
+  font-weight: 550;
+}
+.col-6 .out-para{
+  float:left;
+  font-size:calc(16px + var(--font));
+  line-height: 1.4;
+  margin-top: 10px;
+  color:var(--color2);
+  font-weight: 500;
+}
+.col-6 .para-icon{
+  float:left;
+  color:yellow;
+}

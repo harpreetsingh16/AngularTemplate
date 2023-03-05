@@ -1,0 +1,25 @@
+.footer {
+  padding:20px 0px !important;
+  background-color: var(--color5);
+  font-size: calc(7px + var(--font));
+  font-weight: none;
+  position: fixed;
+  bottom:0;
+  margin-left:250px;
+}
+.footer .left-para
+{
+  text-align: left;
+  float:left;
+}
+.footer a{
+  color:var(--primary_color);
+}
+.footer .right-para{
+  float:right;
+  text-align: right;
+}
+
+.heading h1 {
+  font-size: calc(100px + var(--font));
+}

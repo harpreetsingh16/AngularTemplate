@@ -1,0 +1,53 @@
+.parent_landing{
+  border:1px solid black;
+  flex-direction: column;
+  height:100vh;
+  color:white;
+}
+.landing_navbar{
+  background-color: #3F497F;
+  padding:20px 10px;
+  height:8vh;
+  display: flex;
+  justify-content: space-between;
+}
+.landing-content{
+background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);
+background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+  height:calc(100vh - 8vh);
+
+}
+.logo{
+font-size: 20px;
+font-weight: bold;
+color:yellow;
+}
+a{
+  margin:20px;
+  padding:10px 20px;
+  font-size: 16px;
+  background-color: yellow;
+  color:black;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+.footer-main{
+  position:absolute;
+  bottom:0px;
+  background-color:blue;
+  padding:20px;
+  width:100%;
+}
+
+.landing-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:100px;
+  color:black;
+  text-transform: uppercase;
+  text-decoration:underline ;
+}
+

@@ -1,0 +1,21 @@
+
+<div class="signup">
+  <h1>Sign Up</h1>
+    <form [formGroup]="signform" (ngSubmit)="sign()">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="enter email..." formControlName="email" >
+        <span style="color:blue;" *ngIf="email && email.invalid && email.touched ">*Invalid Email</span>
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="enter password..." formControlName="password" >
+        <span style="color:blue;" *ngIf="pasword && pasword.invalid && pasword.touched" >*Password is not proper length</span>
+        <label for="rememberMe">C. Password: </label>
+        <input  type="password" id="cpassword" formControlName="confirm"  placeholder="re-enter password">
+        <span style="color:red;" *ngIf="signform.errors?.['passwordmatcherror']">Confirm Password not matched</span>
+        <label for="username">Username: </label>
+        <input type="text" id="username" formControlName="username" >
+        <label for="company">Company:</label>
+        <input type="text" id="company" formControlName="company">
+        <p>
+        <button type="submit" (click)="sign()" [disabled]="signform.invalid " routerLink="/dashboard">Submit</button></p>
+    </form>
+</div>
